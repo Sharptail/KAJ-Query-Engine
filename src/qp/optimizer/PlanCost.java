@@ -207,7 +207,7 @@ public class PlanCost {
      **/
     protected long getStatistics(Scan node) {
         String tablename = node.getTabName();
-        String filename = tablename + ".stat";
+        String filename = "testcases/" + tablename + ".stat";
         Schema schema = node.getSchema();
         int numAttr = schema.getNumCols();
         BufferedReader in = null;
